@@ -1,0 +1,25 @@
+.green{
+    color: rgb(39, 226, 39);
+}
+
+.red{
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+
+.div_card{
+    width: 350px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 0px 0px 4px 4px;
+}
+.div_card{
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.img{
+    border-radius: 6px;
+}
