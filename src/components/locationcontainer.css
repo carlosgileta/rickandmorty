@@ -1,0 +1,9 @@
+.button {
+    margin-left: 25px;
+    font-family: 'Bubblegum Sans';
+    border-radius: 25px;
+    height: 45px;
+    background-color: #062226;
+    border-color: white;
+    color: aliceblue;
+}

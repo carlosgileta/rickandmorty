@@ -41,9 +41,20 @@ const  ResidentInfo = ({url}) => {
                 <div className='div_card'>
                      <h3 className={color}>{status}</h3>
                     <img className='img' src={image} alt="" />
+                    
                     <h1>{name}</h1>
-                    <h2>{origin}</h2>
-                    <p>Total de episodios  {episode}</p>
+
+                    <div className='container'>
+                      <p>Origen</p>
+                      <h2>{origin}</h2>  
+                    </div>
+                    
+                    <div className='container'>
+                      <p className='titleepisodes'>Aparicion en Episodios </p> 
+                      <p className='number'>{episode}</p> 
+                    </div>
+                    
+                    
                 </div>
               );
             };

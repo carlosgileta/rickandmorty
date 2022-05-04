@@ -1,8 +1,12 @@
+import './locationinfo.css'
 const LocationInfo = ({ name, type, dimension, population }) => {
     return (
       <div className="location">
-        <h2 >{name}</h2>
-        <div>
+        <div className='container1'>
+            <h2 >{name}</h2>
+        </div>
+        
+        
           <div>
             <b>Type: </b>
             {type}
@@ -16,7 +20,7 @@ const LocationInfo = ({ name, type, dimension, population }) => {
             {population}
           </div>
         </div>
-      </div>
+      
     );
   };
   

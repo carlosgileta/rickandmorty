@@ -53,6 +53,7 @@ function SearchBox2() {
       
   return (
     <div>
+        <h1 className= 'title'>Rick and Morty</h1>
     <input type="text" className="inputbox" id="" 
     onChange={e=>onChangeHandler(e.target.value)}
     

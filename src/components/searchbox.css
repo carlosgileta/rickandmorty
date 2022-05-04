@@ -1,4 +1,21 @@
 
 .inputsuggestion{
-    color: white;
+    font-family: 'Bubblegum Sans';
+    color: rgb(5, 230, 230);
+}
+.inputbox{
+    font-family: 'Bubblegum Sans';
+    color: rgb(5, 230, 230);
+    width: 850px;
+    height: 25px;
+    border-radius: 25px;
+    border:1px solid white ;
+    background-color: #062226;
+    font-size: 19px;
+}
+
+.title{
+    font-family: 'Bubblegum Sans';
+    color: rgb(5, 230, 230);
+    font-size: 45px;
 }

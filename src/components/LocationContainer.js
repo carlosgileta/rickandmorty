@@ -3,6 +3,7 @@ import React from 'react'
 import  { useEffect,useState } from "react"
 import LocationInfo from './LocationInfo';
 import ResidentContainer from './ResidentContainer';
+import './locationcontainer.css'
 
 function LocationContainer({numberId,clean}) {
 
@@ -32,7 +33,7 @@ function LocationContainer({numberId,clean}) {
            setType(response.data.type)
            setDimension(response.data.dimension)
            setPopulation(response.data.residents.length)
-          console.log(response.data)
+          
           
         }).catch((err) => {
             console.log(err)
@@ -46,7 +47,7 @@ function LocationContainer({numberId,clean}) {
   
       return (
     <>
-    <button id="formulario" onClick={onClickbutton}  >Clean for new request</button>
+    <button className='button' id="formulario" onClick={onClickbutton}  >Search</button>
     <LocationInfo
     name={name}
     type={type}
