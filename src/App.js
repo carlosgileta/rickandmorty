@@ -1,6 +1,5 @@
 
 import './App.css';
-import LocationContainer from './components/LocationContainer';
 import SearchBox2 from './components/SearchBox2';
 import port from './asses/img/rick-and-morty-rtj.gif'
 

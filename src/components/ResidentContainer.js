@@ -1,15 +1,15 @@
 import axios from 'axios';
 import React, {useState, useEffect } from 'react'
-import Pagination from './Pagination';
 import ResidentInfo from './ResidentInfo';
 import './residentcontainer.css'
 
 const ResidentContainer = ({url}) => {
     const[characters,setCharacters] = useState([])
     const[loading,setLoading] = useState(false)
-    const[currentPage, setCurrentPage]= useState(1)
-    const[charactersPerPage,setCharactersPerPage]= useState(10)
-
+    // const[currentPage, setCurrentPage]= useState(1)
+    // const[charactersPerPage,setCharactersPerPage]= useState(10)
+    //   setCurrentPage(1)
+    //   setCharactersPerPage(10)
     useEffect(() =>{
 const promise = axios(url);
 setLoading(true)
@@ -32,6 +32,8 @@ setLoading(true)
     
 // limitacion de caracteres por pagina
       let character 
+      const currentPage = 1; // numero de paginas
+      const charactersPerPage = 20; // carcateres por pagina
   if (characters !=null && characters.length >0) {
         const indexOFLastPost = currentPage * charactersPerPage;
     const indexOfFirstPost = indexOFLastPost - charactersPerPage;
