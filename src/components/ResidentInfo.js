@@ -34,9 +34,11 @@ const  ResidentInfo = ({url}) => {
                     break;
             } 
             
+            
             });
-            },[url,name]);
-         
+            
+            },[url, status]);
+            
             return (
                 <div className='div_card'>
                      <h3 className={color}>{status}</h3>
